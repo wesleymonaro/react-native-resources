@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Button, Text, StyleSheet } from 'react-native';
 import * as firebase from 'firebase';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default class Home extends Component {
 
@@ -27,6 +28,7 @@ export default class Home extends Component {
         <Button style={styles.button} onPress={() => this.props.navigation.navigate('FirebaseDB')} title="Firebase DB"></Button>
         <Button style={styles.button} onPress={() => this.props.navigation.navigate('FirebaseStorage')} title="Firebase Storage"></Button>
         <Button style={styles.button} onPress={() => this.props.navigation.navigate('GooglePlaces')} title="Google Places"></Button>
+        <Button style={styles.button} onPress={() => this.props.navigation.navigate('Icons')} title="Ícones"></Button>
       </View>
     )
   }
